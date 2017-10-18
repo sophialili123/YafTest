@@ -14,7 +14,7 @@ class UserController extends Yaf_Controller_Abstract {
      */
 	public function RegAction($name = "Stranger") {
 		//1. fetch query
-		$get = $this->getRequest()->getQuery("get", "default value");
+		//$get = $this->getRequest()->getQuery("get", "default value");
 		var_dump(111);
 		return false;
 		/*

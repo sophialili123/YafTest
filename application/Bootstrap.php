@@ -31,13 +31,13 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
         //创建一个路由协议实例
         $router = Yaf_Dispatcher::getInstance()->getRouter();
         $route = new Yaf_Route_Rewrite(
-            'user/reg/:action',
+            'user/reg/:username',
             array(
                 'controller' => 'user',
                 'action' => 'reg'
             )
         );
-        //使用路由器装载路由协议
+//        使用路由器装载路由协议
         $router->addRoute('product', $route);
     }
 
